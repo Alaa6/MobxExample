@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Counter from './screens/counter';
+// import Counter from './screens/counter';
 import LoginScreen from './screens/login';
 
 const App = () => {

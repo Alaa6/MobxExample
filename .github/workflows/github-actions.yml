@@ -73,8 +73,7 @@ jobs:
           name: android-apk
           path: android/app/build/outputs/apk/release/app-release.apk  
 
-      - name: Publish update to Expo
-        run:  eas update       
+           
 
   build-ios:
     runs-on: macos-latest
