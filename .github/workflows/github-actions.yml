@@ -50,7 +50,7 @@ jobs:
         run: |
           cd android
           ./gradlew assembleRelease
-          
+
       - name: Build Android APK
         run: |
           cd android
@@ -60,7 +60,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: android-apk
-          path: android/app/build/outputs/apk/release/app-release.apk    
+          path: android/app/build/outputs/apk/release/app-release.apk  
+
+      - name: Publish update to Expo
+        run:  eas update       
 
   build-ios:
     runs-on: macos-latest

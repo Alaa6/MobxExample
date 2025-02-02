@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { View, Text, TextInput, Button, StyleSheet,  Dimensions } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Dimensions, Alert   } from 'react-native';
 import loginStore from '../store/login-store';
 
 const LoginScreen = observer(() => {
@@ -30,6 +30,7 @@ const LoginScreen = observer(() => {
 
             {/* Login Button */}
             <Button color={'green'} title="Login" onPress={loginStore.handleLogin} />
+            <Text style={styles.signup} onPress={()=>Alert.alert('Success', 'Sign up screen !')}>Sign up?</Text>
         </View>
     );
 });
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         padding: 16,
-        width : Dimensions.get('screen').width ,
+        width: Dimensions.get('screen').width,
     },
     title: {
         fontSize: 24,
@@ -55,6 +56,12 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         marginBottom: 16,
         paddingHorizontal: 8,
+    },
+    signup: {
+        color: 'blue',
+        marginTop: 10,
+        fontSize: 18,
+        fontWeight: '500',
     },
 });
 

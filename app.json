@@ -1,4 +1,15 @@
 {
   "name": "myprg1",
-  "displayName": "myprg1"
+  "displayName": "myprg1",
+  "extra": {
+    "eas": {
+      "projectId": "22817001-bd84-42f8-8b00-d2ca46816537"
+    }
+  },
+  "runtimeVersion": "1.0.0",
+  "updates": {
+    "url": "https://u.expo.dev/22817001-bd84-42f8-8b00-d2ca46816537"
+  },
+  "android": {},
+  "ios": {}
 }
