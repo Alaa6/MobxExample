@@ -10,6 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@expo/cli": "^0.22.11",
+    "expo": "^52.0.28",
+    "expo-updates": "~0.26.15",
     "mobx": "^6.13.6",
     "mobx-react": "^9.2.0",
     "mobx-react-lite": "^4.1.0",
